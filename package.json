@@ -1,0 +1,22 @@
+{
+  "name": "contoh",
+  "version": "1.0.0",
+  "description": "sadsadsadsad",
+  "main": "index.js",
+  "scripts": {
+    "test": "asdsadasdsad"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfarestaat/Contoh.git"
+  },
+  "keywords": [
+    "fares"
+  ],
+  "author": "Alfaresta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfarestaat/Contoh/issues"
+  },
+  "homepage": "https://github.com/alfarestaat/Contoh#readme"
+}
