@@ -1,0 +1,23 @@
+const { expect } = require('chai')
+const request = require('supertest')
+const data = require('../data/userData.js')
+
+before(async function () {
+    const response = await request('https://kasir-api.belajarqa.com')
+      .post('/authentications')
+      .send(data.LOGIN_USER_DATA)
+  
+    process.env.responseBody = JSON.stringify(await response.body.data.accessToken)
+    console.log((await response).body.data.accessToken)
+})
+  
+  describe('Login Success', () => {
+    it('response status equal to 201', async  () => {
+      const response = await request ('https://kasir-api.belajarqa.com')
+        .post('/authentications')
+        .send(data.LOGIN_USER_DATA)
+  
+      expect(response.status).to.equal(201)
+   
+    })
+  })
